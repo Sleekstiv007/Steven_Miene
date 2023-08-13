@@ -3,9 +3,12 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
+      <h1 className="text-center text-pink-600 text-3xl font-semibold pt-10">
+        Contact
+      </h1>
       <div
         name="contact"
-        class="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
+        class="w-full bg-[#0a192f] flex justify-center items-center p-4"
       >
         <form
           method="POST"
@@ -17,8 +20,7 @@ const Contact = () => {
               Contact
             </p>
             <p class="text-gray-300 py-4">
-              Submit the form below or shoot me an email -
-              smiene13@gmail.com
+              Submit the form below or shoot me an email - smiene13@gmail.com
             </p>
           </div>
           <input

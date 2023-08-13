@@ -7,13 +7,14 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   const handleClose = () => {
     setNav(false);
-  }
+  };
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div>
@@ -21,16 +22,30 @@ const Navbar = () => {
       </div>
       {/* menu */}
       <ul className="hidden md:flex ml-[800px]">
-        <li>Home</li>
-        <li>Bio</li>
-        <li>Pitch</li>
-        <li>Skills</li>
-        <li>Contacts</li>
+        <Link to="/">
+          <li>Home</li>
+        </Link>
+        <Link to="/about">
+          <li>Bio</li>
+        </Link>
+        <Link to="/">
+          <li>Pitch</li>
+        </Link>
+        <Link to="/skills">
+          <li>Skills</li>
+        </Link>
+        <Link to="/contact-me">
+          <li>Contacts</li>
+        </Link>
       </ul>
 
       {/* Hamburger  */}
-      <div  className="md:hidden z-10 pl-[270px]">
-        {!nav ? <FaBars onClick={handleClick} className="text-white" size={20}/> : <FaTimes onClick={handleClose} size={20} />}
+      <div className="md:hidden z-10 pl-[270px]">
+        {!nav ? (
+          <FaBars onClick={handleClick} className="text-white" size={20} />
+        ) : (
+          <FaTimes onClick={handleClose} size={20} />
+        )}
       </div>
 
       {/* mobile view */}
