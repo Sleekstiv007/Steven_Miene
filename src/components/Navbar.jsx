@@ -18,7 +18,10 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] z-10 flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div>
-        <p className="text-pink-500 text-2xl  font-semibold">Stvn</p>
+        <Link to="/">
+          {" "}
+          <p className="text-pink-500 text-2xl  font-semibold">Stvn</p>
+        </Link>
       </div>
       {/* menu */}
       <ul className="hidden md:flex ml-[800px]">
@@ -54,23 +57,33 @@ const Navbar = () => {
           className={
             !nav
               ? "hidden"
-              : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+              : "absolute top-0 text-3xl text-left font-semibold gap-y-5 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
           }
         >
           <a href="/">
-            <li>Home</li>
+            <li className="hover:text-pink-600 focus:text-pink-500 focus:border-b focus:border-gray-500 active:text-pink-500 active:border-b active:border-gray-300">
+              Home
+            </li>
           </a>
           <a href="/about">
-            <li>Bio</li>
+            <li className="hover:text-pink-600 focus:text-pink-500 focus:border-b focus:border-gray-500 active:text-pink-500 active:border-b active:border-gray-300">
+              Bio
+            </li>
           </a>
           <a href="/">
-            <li>Pitch</li>
+            <li className="hover:text-pink-600 focus:text-pink-500 focus:border-b focus:border-gray-500 active:text-pink-500 active:border-b active:border-gray-300">
+              Pitch
+            </li>
           </a>
           <a href="/skills">
-            <li>Skills</li>
+            <li className="hover:text-pink-600 focus:text-pink-500 focus:border-b focus:border-gray-500 active:text-pink-500 active:border-b active:border-gray-300">
+              Skills
+            </li>
           </a>
           <a href="/contact-me">
-            <li>Contacts</li>
+            <li className="hover:text-pink-600 focus:text-pink-500 focus:border-b focus:border-gray-500 active:text-pink-500 active:border-b active:border-gray-300">
+              Contacts
+            </li>
           </a>
         </ul>
       </div>
