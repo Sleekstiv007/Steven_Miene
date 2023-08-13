@@ -6,7 +6,7 @@ const Work = () => {
     <div>
       <div
         name="work"
-        class="w-full md:h-screen text-gray-300 bg-[#0a192f] default_cursor_cs"
+        class="w-full md:h-screen pt-20 pb-10 text-gray-300 bg-[#0a192f] default_cursor_cs"
       >
         <div class="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
           <div class="pb-8">
@@ -15,8 +15,8 @@ const Work = () => {
             </p>
             <p class="py-6">// Check out some of my recent work</p>
           </div>
-          <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 default_cursor_cs">
-            <div class="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div default_cursor_cs">
+          <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-10 default_cursor_cs">
+            <div class="shadow-lg shadow-[#040c16] h-44 group container rounded-md flex justify-center text-center items-center mx-auto content-div default_cursor_cs">
               <div className="relative">
                 <AiFillYoutube
                   className="flex justify-center text-red-700"
@@ -36,7 +36,7 @@ const Work = () => {
                 </div>
               </div>
             </div>
-            <div class="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div default_cursor_cs">
+            <div class="shadow-lg shadow-[#040c16] h-44 group container rounded-md flex justify-center text-center items-center mx-auto content-div default_cursor_cs">
               <div className="relative">
                 <AiFillFilePdf
                   className="flex justify-center text-red-700"

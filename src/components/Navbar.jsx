@@ -16,7 +16,7 @@ const Navbar = () => {
     setNav(false);
   };
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+    <div className="fixed w-full h-[80px] z-10 flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div>
         <p className="text-pink-500 text-2xl  font-semibold">Stvn</p>
       </div>
@@ -57,11 +57,21 @@ const Navbar = () => {
               : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
           }
         >
-          <li className="py-6 text-4xl">Home</li>
-          <li className="py-6 text-4xl">Bio</li>
-          <li className="py-6 text-4xl">Pitch</li>
-          <li className="py-6 text-4xl">Work</li>
-          <li className="py-6 text-4xl">Contacts</li>
+          <a href="/">
+            <li>Home</li>
+          </a>
+          <a href="/about">
+            <li>Bio</li>
+          </a>
+          <a href="/">
+            <li>Pitch</li>
+          </a>
+          <a href="/skills">
+            <li>Skills</li>
+          </a>
+          <a href="/contact-me">
+            <li>Contacts</li>
+          </a>
         </ul>
       </div>
 
