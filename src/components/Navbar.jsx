@@ -31,7 +31,7 @@ const Navbar = () => {
         <Link to="/about">
           <li>Bio</li>
         </Link>
-        <Link to="/">
+        <Link to="/pitch">
           <li>Pitch</li>
         </Link>
         <Link to="/skills">
@@ -70,7 +70,7 @@ const Navbar = () => {
               Bio
             </li>
           </a>
-          <a href="/">
+          <a href="/pitch">
             <li className="hover:text-pink-600 focus:text-pink-500 focus:border-b focus:border-gray-500 active:text-pink-500 active:border-b active:border-gray-300">
               Pitch
             </li>
