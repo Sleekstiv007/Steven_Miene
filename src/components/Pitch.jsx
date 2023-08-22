@@ -18,7 +18,7 @@ const Pitch = () => {
               PITCH - <span className="text-sm">Project Mavericks</span>
             </span>
             <div class="pt-20 text-center default_cursor_cs">
-              <a href="https://youtu.be/c2XNeki67Vs" target="_blank">
+              <a href="https://drive.google.com/file/d/1OYiCuGGJC6V7rgCQRt1ynT8Nc1uVbDw3/view?usp=drivesdk" target="_blank">
                 <button class="text-center rounded-lg px-4 py-2 m-2 bg-white text-gray-700 font-bold text-lg">
                   Watch
                 </button>
